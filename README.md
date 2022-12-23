@@ -4,3 +4,21 @@ Matlab code for the paper **"Iterative Convex Optimization for Model Predictive 
 This is the reference implementation of our paper: [PDF](https://arxiv.org/pdf/2210.04361.pdf)  
 
 In this paper, we propose a framework that solves the safety critical MPC problem in an iterative optimization, which is applicable for any relative-degree control barrier functions. In the proposed formulation, the nonlinear system dynamics as well as the safety constraints modeled as discrete-time high order control barrier functions (DHOCBF) are linearized at each time step. Our formulation is generally valid for any control barrier function with an arbitrary relative-degree. The advantages of fast computational performance with safety guarantee are analyzed and validated with numerical results.  
+
+**Instruction**:  
+There are two folders **"Figure2_3_4"** and **"Table1_2"**. **"Figure2_3_4"** has all information to generate figure 2, 3, 4 in paper and **"Table1_2"** is for table 1,2 in paper.   
+Inside **"Figure2_3_4"**, *"Figure2aFigure3"* includes codes to generate necessary data for figure 2-a and figure 3; *"Figure2bcd"* includes codes to generate necessary data for figure 2-b,c,d;   
+*"Figure4"* includes codes to generate necessary data for figure 4.   
+*"NMPCDCBF1"* and *"NMPCDCBF2"* include codes related to NMPC-DCBF with mcbf=1 and mcbf=2 respectively and *"FigureGenerate"* includes codes to transfer the data into figures in paper.  
+First, run *"Figure2aFigure3"*, *"Figure2bcd"* and *"Figure4"* and you will see the data files generated as MATLAB mat files.  
+Second, run *"FigureGenerate"* to generate all figures in paper, which will be saved in folder **"figures"**.  
+Inside **"Table1_2"**, there are four folders including the codes to generate necessary dada for table 1,2 in paper.   
+*"gamma1-4gamma2-4"* includes the codes for iMPC-DCBF and NMPC-DCBF with decay rate parameters gamma1=0.4, gamma2=0.4 and mcbf=2;    
+*"gamma1-4"* includes the codes for iMPC-DCBF and NMPC-DCBF with decay rate parameters gamma1=0.4 and mcbf=1;  
+*"gamma1-6gamma2-6"* includes the codes for iMPC-DCBF and NMPC-DCBF with decay rate parameters gamma1=0.6, gamma2=0.6 and mcbf=2;  
+*"gamma1-6"* includes the codes for iMPC-DCBF and NMPC-DCBF with decay rate parameters gamma1=0.6 and mcbf=1.  
+In each folder, there are six files called *"test4","test8","test12","test16","test20","test24"* which correspond to the number of horizon 4,8,12,16,20,24 for iMPC-DCBF and NMPC-DCBF.  
+Run these 6 files in each folder you will see corresponding data files generated as MATLAB mat files *"feasibility-x"* and *"timecom-x"* which include the infeasible rate and mean/variance of computing time to generate one time-step trajectory for iMPC-DCBF and NMPC-DCBF in paper.  
+
+**Dependencies:**  
+The packages needed for running the code are [Yalmip](https://yalmip.github.io/) and [IPOPT](https://github.com/coin-or/Ipopt) for NMPC-DCBF and [OSQP](https://github.com/osqp/osqp) for iMPC-DCBF.
