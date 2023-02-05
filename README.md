@@ -23,6 +23,6 @@ Instead, if you want to run the file for different number of horizon parallelly,
 You can run these 6 files parallely, in order to generate same MATLAB mat files *"feasibility_N"* and *"timecom_N"* which 
 include the information about infeasible rate and mean/variance of computing time in paper from generating one time-step trajectory for iMPC-DCBF and NMPC-DCBF. You should run the file *"tabledata"* next and all useful data in table are stored in matrices "nmpcdata" and "impcdata".  
 
-
+![Alt text]([https://github.com/weiman152/StarsView/blob/master/ScreenShots/1.png](https://github.com/ShockLeo/Iterative-convex-MPC-with-CBFs/blob/main/Table1_2/performance.png))
 **Dependencies:**  
 The packages needed for running the code are [Yalmip](https://yalmip.github.io/) and [IPOPT](https://github.com/coin-or/Ipopt) for NMPC-DCBF and [OSQP](https://github.com/osqp/osqp) for iMPC-DCBF.
