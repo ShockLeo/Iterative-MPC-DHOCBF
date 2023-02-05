@@ -18,10 +18,10 @@ Inside **"Table1_2"**, there are four folders including the codes to generate ne
 *"gamma1-6gamma2-6"* includes the codes for iMPC-DCBF and NMPC-DCBF with decay rate parameters gamma1=0.6, gamma2=0.6 and mcbf=2;  
 *"gamma1-6"* includes the codes for iMPC-DCBF and NMPC-DCBF with decay rate parameters gamma1=0.6 and mcbf=1.  
 In each folder, run the file *"test_comprehensive"* and you will see corresponding data files generated as MATLAB mat files *"feasibility_N"* and *"timecom_N"* which 
-include the information about infeasible rate and mean/variance of computing time (stored in matrices "nmpcdata" and "impcdata") in table from generating one time-step trajectory for iMPC-DCBF and NMPC-DCBF.  
-Instead, if you want to run the file for different number of hirozon parallelly, in folder **"test_each_horozon"**, there are six files called *"test_N4"*,*"test_N8"*,*"test_N12"*,*"test_N16"*,*"test_N20"*,*"test_N24"* which correspond to the number of horizon 4,8,12,16,20,24 for iMPC-DCBF and NMPC-DCBF.
+include the information about infeasible rate and mean/variance of computing time (stored in matrices "nmpcdata" and "impcdata") in paper from generating one time-step trajectory for iMPC-DCBF and NMPC-DCBF.  
+Instead, if you want to run the file for different number of horizon parallelly, in folder **"test_each_horozon"**, there are six files called *"test_N4"*,*"test_N8"*,*"test_N12"*,*"test_N16"*,*"test_N20"*,*"test_N24"* which correspond to the number of horizon 4,8,12,16,20,24 for iMPC-DCBF and NMPC-DCBF.
 You can run these 6 files parallely, in order to generate same MATLAB mat files *"feasibility_N"* and *"timecom_N"* which 
-include the information about infeasible rate and mean/variance of computing time in table from generating one time-step trajectory for iMPC-DCBF and NMPC-DCBF. You should run the file *"tabledata"* next and all useful data in table are stored in matrices "nmpcdata" and "impcdata".  
+include the information about infeasible rate and mean/variance of computing time in paper from generating one time-step trajectory for iMPC-DCBF and NMPC-DCBF. You should run the file *"tabledata"* next and all useful data in table are stored in matrices "nmpcdata" and "impcdata".  
 
 
 **Dependencies:**  
