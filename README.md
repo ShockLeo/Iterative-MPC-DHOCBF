@@ -10,7 +10,7 @@ There are two folders **"Figure2_3_4"** and **"Table1_2"**. **"Figure2_3_4"** ha
 
 Inside **"Figure2_3_4"**, *"Closedloop_Trajectories_Hyperparameters"* includes codes to generate necessary data for figure 2-a and figure 3; *"Iterative_Convergence"* includes codes to generate necessary data for figure 2-b,c,d;   
 *"Maximum_Iterations"* includes codes to generate necessary data for figure 4.   
-*"NMPCDCBF1"* and *"NMPCDCBF2"* include codes related to NMPC-DCBF with mcbf=1 and mcbf=2 respectively and *"FigureGenerate"* includes codes to transfer the data into figures in paper.  
+*"NMPCDCBF1"* and *"NMPCDCBF2"* include codes related to NMPC-DHOCBF with mcbf=1 and mcbf=2 respectively and *"FigureGenerate"* includes codes to transfer the data into figures in paper.  
 First, run *"Closedloop_Trajectories_Hyperparameters"*, *"Iterative_Convergence"* and *"Maximum_Iterations"* and you will see the data files generated as MATLAB mat files.  
 Second, run *"FigureGenerate"* to generate all figures in paper, which will be saved in folder **"figures"**.  
 
@@ -22,7 +22,7 @@ Inside **"Table1_2"**, there are four folders including the codes to generate ne
 In each folder, run the file *"test_comprehensive"* and you will see corresponding data files generated as MATLAB mat files *"feasibility_N"* and *"timecom_N"* which 
 include the information about infeasible rate and mean/variance of computing time (stored in matrices "nmpcdata" and "impcdata") in paper from generating one time-step trajectories for iMPC-DHOCBF and NMPC-DHOCBF.  
 
-Instead, if you want to run the file for different number of horizon parallelly, in folder **"test_each_horozon"**, there are six files called *"test_N4"*,*"test_N8"*,*"test_N12"*,*"test_N16"*,*"test_N20"*,*"test_N24"* which correspond to the number of horizon 4,8,12,16,20,24 for iMPC-DHOCBF and NMPC-DHOCBF.
+Instead, if you want to run the file for different number of horizon parallelly, in folder **"test_each_horizon"**, there are six files called *"test_N4"*,*"test_N8"*,*"test_N12"*,*"test_N16"*,*"test_N20"*,*"test_N24"* which correspond to the number of horizon 4,8,12,16,20,24 for iMPC-DHOCBF and NMPC-DHOCBF.
 You can run these 6 files parallely, in order to generate same MATLAB mat files *"feasibility_N"* and *"timecom_N"* which include the information about infeasible rate and mean/variance of computing time in paper from generating one time-step trajectories for iMPC-DHOCBF and NMPC-DHOCBF. You should run the file *"tabledata"* next and all useful data in table are stored in matrices "nmpcdata" and "impcdata".  
 
 **Performance Comparison between NMPC-DHOCBF and iMPC-DHOCBF:**  
