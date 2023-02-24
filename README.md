@@ -29,7 +29,7 @@ You can run these 6 files parallely, in order to generate same MATLAB mat files 
 1. For comparison of capability of generating safe optimal trajectories for different numbers of horizon and hyperparameters, please see the figure below:  
 ![image](https://github.com/ShockLeo/Iterative-convex-MPC-with-CBFs/blob/main/Figure2_3_4/performance2.png)  
 2. For comparison of infeasible rate and mean/variance of computing time from generating one time-step trajectories, please see the figure below:  
-![image](https://github.com/ShockLeo/Iterative-convex-MPC-with-CBFs/blob/main/Table1_2/performance.png)  
+![image](https://github.com/ShockLeo/Iterative-convex-MPC-with-CBFs/blob/main/Table1_2/performance.png) . 
 For other figures please refer to the paper.  
 
 **Dependencies:**  
