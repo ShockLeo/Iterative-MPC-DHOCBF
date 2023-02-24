@@ -19,11 +19,13 @@ Inside **"Table1_2"**, there are four folders including the codes to generate ne
 *"gamma1-4"* includes the codes for iMPC-DHOCBF and NMPC-DHOCBF with decay rate parameters gamma1=0.4 and mcbf=1;  
 *"gamma1-6gamma2-6"* includes the codes for iMPC-DHOCBF and NMPC-DHOCBF with decay rate parameters gamma1=0.6, gamma2=0.6 and mcbf=2;  
 *"gamma1-6"* includes the codes for iMPC-DHOCBF and NMPC-DHOCBF with decay rate parameters gamma1=0.6 and mcbf=1.  
+Run "InitialState" first to generate 1000 random initial states in the mat file "InitialStateData", then copy it to each folder.  
 In each folder, run the file *"test_comprehensive"* and you will see corresponding data files generated as MATLAB mat files *"feasibility_N"* and *"timecom_N"* which 
 include the information about infeasible rate and mean/variance of computing time (stored in matrices "nmpcdata" and "impcdata") in paper from generating one time-step trajectories for iMPC-DHOCBF and NMPC-DHOCBF.  
 
-Instead, if you want to run the file for different number of horizon parallelly, in folder **"test_each_horizon"**, there are six files called *"test_N4"*,*"test_N8"*,*"test_N12"*,*"test_N16"*,*"test_N20"*,*"test_N24"* which correspond to the number of horizon 4,8,12,16,20,24 for iMPC-DHOCBF and NMPC-DHOCBF.
-You can run these 6 files parallely, in order to generate same MATLAB mat files *"feasibility_N"* and *"timecom_N"* which include the information about infeasible rate and mean/variance of computing time in paper from generating one time-step trajectories for iMPC-DHOCBF and NMPC-DHOCBF. You should run the file *"tabledata"* next and all useful data in table are stored in matrices "nmpcdata" and "impcdata".  
+It may take a long time to run the file "test_comprehensive" (several hours to a day depending on your computer when the number of horizon reaches large). Instead, if you want to run the file for different number of horizon parallelly to speed up the running process, in folder "test_each_horizon", there are six files called "test_N4","test_N8","test_N12","test_N16","test_N20","test_N24" which correspond to the number of horizon 4,8,12,16,20,24 for iMPC-DHOCBF and NMPC-DHOCBF.
+Copy "InitialStateData" to this folder then you can run these 6 files parallely, in order to generate same MATLAB mat files "feasibility_N" and "timecom_N" which 
+include the information about infeasible rate and mean/variance of computing time in paper from generating one time-step trajectories for iMPC-DHOCBF and NMPC-DHOCBF. You should run the file "tabledata" next and all useful data in table are stored in matrices "nmpcdata" and "impcdata".  
 
 **Performance Comparison between NMPC-DHOCBF and iMPC-DHOCBF:**  
 1. For comparison of capability of generating safe optimal trajectories for different numbers of horizon and hyperparameters, please see the figure below:  
