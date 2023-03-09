@@ -1,4 +1,4 @@
-# Iterative-convex-MPC-with-CBFs
+# Iterative-MPC-DHOCBF
 Matlab code for the paper **"Iterative Convex Optimization for Model Predictive Control with Discrete-Time High-Order Control Barrier Functions"**, accepted by IEEE American Control Conference (ACC) 2023, Authors: ***Shuo Liu, Jun Zeng,  Koushil Sreenath and Calin Belta***  
 
 This is the reference implementation of our paper: [PDF](https://arxiv.org/pdf/2210.04361.pdf)  
