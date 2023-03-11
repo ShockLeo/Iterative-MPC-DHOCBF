@@ -29,9 +29,9 @@ include the information about infeasible rate and mean/variance of computing tim
 
 **Performance Comparison between NMPC-DHOCBF and iMPC-DHOCBF:**  
 1. For comparison of capability of generating safe optimal trajectories for different numbers of horizon and hyperparameters, please see the figure below:  
-![image](https://github.com/ShockLeo/Iterative-convex-MPC-with-CBFs/blob/main/Figure2_3_4/performance2.png)  
+![image](https://github.com/ShockLeo/Iterative-MPC-DHOCBF/blob/main/closedloop_performance/performance2.png)  
 2. For comparison of infeasible rate and mean/variance of computing time from generating one time-step trajectories, please see the figure below:  
-![image](https://github.com/ShockLeo/Iterative-convex-MPC-with-CBFs/blob/main/Table1_2/performance1.png) 
+![image](https://github.com/ShockLeo/Iterative-MPC-DHOCBF/blob/main/benchmark/performance1.png) 
 For other figures please refer to the paper.  
 
 **Dependencies:**  
