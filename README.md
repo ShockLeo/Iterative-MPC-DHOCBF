@@ -32,10 +32,10 @@ There are two subfolders `closedloop_performance` and `benchmark`. `closedloop_p
 
 ### Code Descriptions
 There are four folders including the codes to generate necessary dada for table 1,2 in paper.   
-* `gamma1-4gamma2-4` includes the codes for iMPC-DHOCBF and NMPC-DHOCBF with decay rate parameters `gamma1=0.4, gamma2=0.4, mcbf=2`.
-* `gamma1-4` includes the codes for iMPC-DHOCBF and NMPC-DHOCBF with decay rate parameters `gamma1=0.4, mcbf=1`.
-* `gamma1-6gamma2-6` includes the codes for iMPC-DHOCBF and NMPC-DHOCBF with decay rate parameters `gamma1=0.6, gamma2=0.6, mcbf=2`.
-* `gamma1-6` includes the codes for iMPC-DHOCBF and NMPC-DHOCBF with decay rate parameters `gamma1=0.6, mcbf=1`.
+* `gamma1_0p4gamma2_0p4` includes the codes for iMPC-DHOCBF and NMPC-DHOCBF with decay rate parameters `gamma1=0.4, gamma2=0.4, mcbf=2`.
+* `gamma1_0p4` includes the codes for iMPC-DHOCBF and NMPC-DHOCBF with decay rate parameters `gamma1=0.4, mcbf=1`.
+* `gamma1_0p6gamma2_0p6` includes the codes for iMPC-DHOCBF and NMPC-DHOCBF with decay rate parameters `gamma1=0.6, gamma2=0.6, mcbf=2`.
+* `gamma1_0p6` includes the codes for iMPC-DHOCBF and NMPC-DHOCBF with decay rate parameters `gamma1=0.6, mcbf=1`.
 ### Usage
 * Run `InitialState.m` first to generate 1000 random initial states in the mat file `InitialStateData.mat`, then copy it to each folder.
 * In each folder, run the file `test_comprehensive.m` and you will see corresponding data files generated as MATLAB mat files `feasibility_N.mat` and `timecom_N.mat` which includes the information about infeasible rate and mean/variance of computing time (stored in matrices `nmpcdata` and `impcdata`) in paper from generating one time-step trajectories for iMPC-DHOCBF and NMPC-DHOCBF.
