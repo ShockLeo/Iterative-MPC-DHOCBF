@@ -6,7 +6,7 @@ In this paper, we propose a framework that solves the safety critical MPC proble
 ## Citing
 If you find this project useful in your work, please consider citing following work:
 ```
-@@inproceedings{liu2023iterative,
+@inproceedings{liu2023iterative,
   title={Iterative Convex Optimization for Model Predictive Control with Discrete-Time High-Order Control Barrier Functions},
   author={Liu, Shuo and Zeng, Jun and Sreenath, Koushil and Belta, Calin A},
   booktitle={2023 American Control Conference (ACC)},
