@@ -43,7 +43,7 @@ There are four folders including the codes to generate necessary dada for table 
 ### Warnings
 * It may take a long time to run the file `test_comprehensive.m` (several hours to a day depending on your computer when the number of horizon reaches large). Instead, if you want to run the file for different number of horizon parallelly to speed up the running process, in folder `test_each_horizon.m`, there are six files called `test_N4.m`, `test_N8.m`, `test_N12.m`, `test_N16.m`, `test_N20.m`,`test_N24.m` which correspond to the number of horizon 4, 8, 12, 16, 20, 24 for iMPC-DHOCBF and NMPC-DHOCBF. By copying `InitialStateData.mat` to this folder then you can run these 6 files parallely, in order to generate same MATLAB mat files `feasibility_N.mat` and `timecom_N.mat` which  includes the information about infeasible rate and mean/variance of computing time in paper from generating one time-step trajectories for iMPC-DHOCBF and NMPC-DHOCBF. You should run the file `tabledata.m` next and all useful data in table are stored in matrices `nmpcdata` and `impcdata`.
 
-### Post Analysis
+## Post Analysis
 1. For comparison of capability of generating safe optimal trajectories for different numbers of horizon and hyperparameters, please see the figure below:
 ![image](https://github.com/ShockLeo/Iterative-MPC-DHOCBF/blob/main/closedloop_performance/performance2.png)
 2. For comparison of infeasible rate and mean/variance of computing time from generating one time-step trajectories, please see the figure below:
